@@ -13,7 +13,7 @@ bash evaluation.sh /path/to/your/model "NL2CodeEvaluationshortmessage" 1 #use_va
 cd scripts
 bash evaluation_code2code.sh /path/to/your/model "Code2CodeEvaluationshortmessage"
 ```
-**Training**
+### Training
 
 Change `--train_data_path` to the actual training data path.
 
