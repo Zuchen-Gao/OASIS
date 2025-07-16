@@ -6,15 +6,14 @@ import time
 
 from torch import Tensor
 from transformers import AutoTokenizer, AutoModel
-from sentence_transformers import SentenceTransformer
 
 from openai import APIConnectionError, OpenAI, AzureOpenAI
-from angle_emb import AnglE
 
 class TextEmbedding3Model():
     def __init__(self, use_azure=False):
         self.use_azure = use_azure
 
+    # Modify Azure and OpenAI endpoint and key as per your configuration
     azure_endpoint_key_model = [
         ["endpoint", "key", "text-embedding-3-large"],
         ["endpoint", "key", "text-embedding-3-large"],
@@ -37,7 +36,7 @@ class TextEmbedding3Model():
             input=texts, 
             model=openai_api_key_url_model[2]
         )
-    return response
+        return response
 
     def generate_azure_embeddings_response(self, texts, index=0):
         client = AzureOpenAI(

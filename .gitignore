@@ -1,11 +1,4 @@
 __pycache__
 
-# Evaluation dataset
-/data/evaluation/AdvTest/ori_data
-/data/evaluation/AdvTest/clean_data/*.py
-/data/evaluation/CodeSearchNet/ori_data
-/data/evaluation/CodeSearchNet/clean_data/*.py
-/data/evaluation/CodeSearchNet/clean_data/dataset/*/train.jsonl
-/data/evaluation/CoSQA/ori_data
-/data/evaluation/CoSQA/clean_data/*.py
-/data/evaluation/CoSQA/*.py
+# Logs
+/logs/*

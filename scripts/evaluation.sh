@@ -9,15 +9,16 @@ if [ "$short_message" == "" ]; then
     short_message=$(basename "$model_name_or_path")
 fi
 if [ "$use_valid" -eq 1 ]; then
-    valid_arg="--use_valid=true"
+    valid_arg="--use_valid=True"
 else
-    valid_arg="--use_valid=false"
+    valid_arg="--use_valid=False"
 fi
 
 timestamp=$(date "+%Y%m%d-%H%M%S")
-eval_batch_size=2
+eval_batch_size=16
 
 log_path="./logs"
+mkdir -p ${log_path}/nl2code
 
 python run_evaluation.py \
     --model_name_or_path $model_name_or_path \
