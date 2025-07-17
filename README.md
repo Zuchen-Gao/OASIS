@@ -3,7 +3,7 @@
 - 🤗 [2025/03/12] Our latest Code Embedding Model [OASIS-code-1.5B](https://huggingface.co/Kwaipilot/OASIS-code-1.5B) is now released.
 - 📝 [2025/03/12] Our preprint is now available at [OASIS-arxiv](https://arxiv.org/abs/2503.08161).
 - 🔥 [2025/05/16] Our paper is accepted as a main conference paper in [ACL2025](https://2025.aclweb.org/program/main_papers/).
-- 🤗 [2025/07/XX] All training data for OASIS is now available at [TBF]. 
+- 🤗 [2025/07/XX] All training data for OASIS is now available at [OASIS-53m-dataset](https://huggingface.co/datasets/Kwaipilot/OASIS-53M-dataset). 
 
 ## Framework
 <p align="center">
@@ -47,5 +47,5 @@ bash evaluation_code2code.sh Kwaipilot/OASIS-code-embedding-1.5B "Code2CodeEvalu
 ```
 ### Training
 
-Dataset examples can be found in ```/data/training```, Huggingface Dataset is available at [TBF].
+Dataset examples can be found in ```/data/training```, Huggingface Dataset is available at [OASIS-53m-dataset](https://huggingface.co/datasets/Kwaipilot/OASIS-53M-dataset).
 
